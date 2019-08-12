@@ -1,4 +1,4 @@
-public class IndexMinPQ<Key extends Comparable<Key>> {
+public class IndexMinPQ<Key extends Comparable<Key>>  implements Iterable<Integer> {
     private int n;          // number of elements on PQ
     private int[] pq;       // binary heap using 1-based indexing
     private int[] qp;       // inverse: qp[pq[i]] = pq[qp[i]] = i
